@@ -1,0 +1,10 @@
+.headerPicBox {
+    margin-top: 2rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.headerPicBox img {
+    width: 100%;
+    height: auto;
+}
