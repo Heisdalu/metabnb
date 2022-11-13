@@ -28,6 +28,7 @@
 @media screen and (min-width: 1000px) {
   .detailMain {
     padding: 0 3rem;
+    padding-bottom: 3rem;
   }
   .detailHeader {
     font-size: 3rem;
