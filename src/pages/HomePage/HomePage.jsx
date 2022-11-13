@@ -1,3 +1,4 @@
+import Footer from "../../components/Footer/Footer";
 import Header from "../../components/Header/Header";
 import Detail from "../../components/NftDetail/Detail";
 import NftGift from "../../components/NftGift/NftGift";
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Header />
       <Detail />
       <NftGift />
+      <Footer />
     </div>
   );
 };

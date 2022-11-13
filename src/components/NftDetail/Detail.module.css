@@ -1,5 +1,4 @@
 .detailMain {
-  border: 1px solid;
   padding: 1rem 1rem;
   padding-bottom: 3rem;
   background-color: var(--white);
@@ -7,7 +6,6 @@
 
 .detailHeader {
   text-align: center;
-  border: 1px solid;
   font-size: 2rem;
   font-weight: 700;
   font-family: var(--red-rose);
@@ -22,6 +20,7 @@
 
   .detailHeader {
     font-size: 2.5rem;
+    margin: 3rem 0;
   }
 }
 
