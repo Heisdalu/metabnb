@@ -1,0 +1,22 @@
+.nftList {
+  border: 1px solid;
+  display: grid;
+  grid-gap: 24px;
+}
+
+@media screen and (min-width: 500px) {
+  .nftList {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .nftList {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nftList {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}

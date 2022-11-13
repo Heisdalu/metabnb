@@ -6,7 +6,7 @@ const Illustration = () => {
   return (
     <figure className={style.headerPicBox}>
       <picture>
-        <source srcset={headerGridWebp} type="image/webp" />
+        <source srcSet={headerGridWebp} type="image/webp" />
         <img src={headerGrid} alt="" />
       </picture>
     </figure>

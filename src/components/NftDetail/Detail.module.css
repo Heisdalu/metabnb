@@ -1,0 +1,35 @@
+.detailMain {
+  border: 1px solid;
+  padding: 1rem 1rem;
+  padding-bottom: 3rem;
+  background-color: var(--white);
+}
+
+.detailHeader {
+  text-align: center;
+  border: 1px solid;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: var(--red-rose);
+  margin: 2rem 0;
+  color: var(--black);
+}
+
+@media screen and (min-width: 768px) {
+  .detailMain {
+    padding: 0 2rem;
+  }
+
+  .detailHeader {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .detailMain {
+    padding: 0 3rem;
+  }
+  .detailHeader {
+    font-size: 3rem;
+  }
+}

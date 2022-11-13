@@ -1,0 +1,54 @@
+.nftCard {
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  border: 1px solid #d7d7d7;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.nftPic {
+  width: 100%;
+  height: auto;
+}
+
+.nftPic img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.nftDetail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+  grid-gap: 8px;
+}
+
+.title,
+.rate,
+.address,
+.time {
+  font-family: var(--red-rose);
+  font-size: 0.75rem;
+}
+
+.title {
+  color: var(--text-black);
+  font-weight: 400;
+}
+
+.rate {
+  font-weight: 700;
+}
+
+.address,
+.time {
+  font-weight: 400;
+}
+
+.rating {
+  display: flex;
+}
+
+.rating > * + * {
+  margin-left: 8px;
+}
