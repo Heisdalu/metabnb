@@ -1,11 +1,12 @@
 .headerMain {
-  padding: 1rem;
+  padding: 1rem 0;
   /* border: 1px solid; */
 }
 
 .mainHeader {
   /* border: 1px solid; */
   margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .headerTitle {
@@ -15,6 +16,7 @@
   font-weight: 700;
   font-family: var(--red-rose);
   color: var(--text-black);
+  text-align: center;
 }
 
 .innerSpan {
@@ -29,6 +31,9 @@
   font-weight: 400;
   font-family: var(--red-rose);
   max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .searchBar {
@@ -67,9 +72,51 @@
   font-family: var(--red-rose);
 }
 
+.sponsor {
+  background-color: var(--purple);
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.sponsor img {
+  width: 100px;
+  margin: 0.5rem 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .headerMain {
+    padding: 1 2rem;
+  }
+
+  .mainHeader {
+    padding: 0 2rem;
+  }
+
+  .headerTitle {
+    font-size: 2.5rem;
+  }
+
+  .sponsor {
+    padding: 0 5rem;
+  }
+
+  .sponsor img:nth-child(1) {
+    margin-right: auto;
+  }
+  .sponsor img:nth-child(2) {
+    margin: 0 auto;
+  }
+  .sponsor img:nth-child(3) {
+    margin-left: auto;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .headerMain {
-    padding: 1.5rem 3rem;
+    padding: 1.5rem 0;
   }
 
   .mainHeader {
@@ -77,11 +124,13 @@
     grid-template-columns: 1.3fr 1fr;
     grid-column-gap: 7rem;
     place-items: center;
+    padding: 0 3rem;
   }
 
   .headerTitle {
-    font-size: 3.5rem;
+    font-size: 3rem;
     line-height: 140%;
+    text-align: left;
   }
 
   .headerText {
@@ -90,9 +139,18 @@
     margin-top: 0;
     margin: 1.5rem 0 2.5rem 0;
     max-width: none;
+    text-align: left;
   }
 
   .searchBar {
     margin-top: 0;
+  }
+
+  .sponsor {
+    margin-top: 5rem;
+  }
+
+  .sponsor img {
+    width: auto;
   }
 }

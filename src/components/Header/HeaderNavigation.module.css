@@ -1,6 +1,7 @@
 .headerContainer {
   display: flex;
-  border: 1px solid;
+  /* border: 1px solid; */
+  padding: 0 1rem;
 }
 
 .home__link img {
@@ -15,9 +16,16 @@
   display: none;
 }
 
+@media screen and (min-width: 768px) {
+  .headerContainer {
+    padding: 1rem 2rem;
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .headerContainer {
     align-items: center;
+    padding: 0 3rem;
   }
 
   .home__link img {

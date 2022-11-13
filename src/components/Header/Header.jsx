@@ -1,6 +1,9 @@
 import style from "./Header.module.css";
 import HeaderNavigation from "./HeaderNavigation";
 import Illustration from "./Illustration";
+import mbTokenPic from "../../../public/assets/icon/mb-token.svg";
+import metamask from "../../../public/assets/icon/metamask.svg";
+import opensea from "../../../public/assets/icon/opensea.svg";
 
 const Header = () => {
   return (
@@ -36,6 +39,11 @@ const Header = () => {
           </div>
         </section>
         <Illustration />
+      </div>
+      <div className={style.sponsor}>
+        <img src={mbTokenPic} alt="" />
+        <img src={metamask} alt="" />
+        <img src={opensea} alt="" />
       </div>
     </div>
   );

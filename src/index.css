@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
 :root {
   --red-rose: "Red Rose", cursive;
   --text-black: #434343;
