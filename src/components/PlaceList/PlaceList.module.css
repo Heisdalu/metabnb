@@ -1,0 +1,53 @@
+.nftList {
+  display: grid;
+  grid-gap: 1rem;
+  place-items: center;
+  margin: 2rem 1rem;
+  list-style: none;
+}
+
+.nftList li {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--red-rose);
+}
+
+.location {
+  width: 161px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  align-items: center;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  border: 1px solid #b4b4b4;
+  border-radius: 8px;
+}
+
+.locationTitle {
+  margin-right: auto;
+}
+
+.locationImg {
+  margin-left: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .nftList {
+    display: flex;
+    margin: 2rem;
+    grid-gap: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .nftList {
+    margin: 2rem 3rem;
+  }
+
+  .nftList li {
+    font-size: 1.25rem;
+    width: 100%;
+  }
+  
+}
