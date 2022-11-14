@@ -12,6 +12,7 @@ body {
 
 :root {
   --red-rose: "Red Rose", cursive;
+  --sora: 'Sora', sans-serif;
   --text-black: #434343;
   --black: #000000;
   --white: #fff;
@@ -24,4 +25,9 @@ a {
   background-color: transparent;
   border: none;
   outline: none;
+}
+
+
+img {
+  display: block;
 }
