@@ -5,7 +5,13 @@ const NtfCard = ({ pic }) => {
   return (
     <div className={style.nftCard}>
       <figure className={style.nftPic}>
-        <img src={pic} alt="desert king" />
+        <img
+          src={pic}
+          width="300px"
+          height="300px"
+          style={{ width: "100%", height: "auto" }}
+          alt="desert king"
+        />
       </figure>
       <div className={style.nftDetail}>
         <h1 className={style.title}>Desert king</h1>

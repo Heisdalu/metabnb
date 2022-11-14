@@ -2,8 +2,24 @@
   padding: 1rem 0;
 }
 
+.nftGallery {
+  margin: 0 1rem;
+  padding: 2rem 0;
+}
+
 @media screen and (min-width: 768px) {
   .header {
     padding: 1.5rem 0;
+  }
+
+  .nftGallery {
+    margin: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .nftGallery {
+    margin: 0 3rem;
+    padding-top: 0.5rem;
   }
 }
