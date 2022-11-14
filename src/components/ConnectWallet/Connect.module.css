@@ -1,0 +1,84 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  background-color: red;
+  background-color: #4040404d;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.hidden {
+  z-index: -1;
+}
+
+.connectMain {
+  background-color: var(--white);
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+}
+
+.header {
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #cfd8dc;
+}
+
+.exitWallet {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: var(--red-rose);
+  color: #333333;
+}
+
+.walletMain {
+  margin-top: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+.text {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--red-rose);
+  color: #333333;
+}
+
+.walletType {
+  padding: 1rem 0;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.wallet {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border: 1px solid;
+  background: #f8f9fa;
+  border: 1px solid #cfd8dc;
+  border-radius: 12px;
+}
+
+.walletHeader {
+  display: flex;
+  align-items: center;
+}
+
+.walletDomain {
+  font-size: 1.125rem;
+  margin-left: 10px;
+  font-weight: 600;
+  font-family: var(--sora);
+}
+
+.rightArrow {
+  margin-left: auto;
+}

@@ -1,6 +1,7 @@
 import HomePage from "./pages/HomePage/HomePage";
 import Place from "./pages/Places/Place";
 import { Routes, Route } from "react-router-dom";
+import Connect from "./components/ConnectWallet/Connect";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/place-to-stay" element={<Place />} />
       </Routes>
+      <Connect />
     </div>
   );
 }
