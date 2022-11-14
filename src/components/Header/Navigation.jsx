@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import exitIcon from "../../../public/assets/icon/exit.svg";
 import style from "./Navigation.module.css";
 
@@ -8,12 +9,12 @@ const Navigation = () => {
         <img src={exitIcon} alt="" />
       </button>
       <div className={style.navigationBox}>
-        <a href="" className={style.navlink}>
+        <Link to="/" className={style.navlink}>
           Home
-        </a>
-        <a href="" className={style.navlink}>
+        </Link>
+        <Link to="/place-to-stay" className={style.navlink}>
           Place to stay
-        </a>
+        </Link>
         <a href="" className={style.navlink}>
           NFTs
         </a>
