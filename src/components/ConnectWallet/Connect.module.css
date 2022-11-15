@@ -1,16 +1,11 @@
-.overlay {
+.mainHeader {
   position: fixed;
   top: 0;
   height: 100vh;
-  background-color: red;
-  background-color: #4040404d;
+  background-color: transparent;
   width: 100%;
   display: grid;
   place-items: center;
-}
-
-.hidden {
-  z-index: -1;
 }
 
 .connectMain {
@@ -18,6 +13,9 @@
   border-radius: 16px;
   max-width: 500px;
   width: 90%;
+  z-index: 3;
+  animation-name: moveDown;
+  animation-duration: .5s;
 }
 
 .header {
@@ -44,6 +42,17 @@
   padding: 1rem 2rem;
 }
 
+@keyframes moveDown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .text {
   font-size: 1rem;
   font-weight: 400;
@@ -81,4 +90,8 @@
 
 .rightArrow {
   margin-left: auto;
+}
+
+.hidden {
+  display: none;
 }
