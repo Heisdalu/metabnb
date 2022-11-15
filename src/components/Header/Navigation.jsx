@@ -1,11 +1,27 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
 import exitIcon from "../../../public/assets/icon/exit.svg";
+import { UserContext } from "../../store/userProvider";
 import style from "./Navigation.module.css";
 
-const Navigation = () => {
+const Navigation = ({ activateBtn, toggleFunc }) => {
+  const { toggle } = useContext(UserContext);
+
+  const change = () => {
+    toggle();
+  };
+
+  const exitHamburger = () => {
+    toggleFunc();
+  };
+
   return (
-    <nav className={style.navigation}>
-      <button className={style.exitBtn}>
+    <nav
+      className={`${style.navigation} ${
+        activateBtn && style.defaultNavigation
+      }`}
+    >
+      <button className={style.exitBtn} onClick={exitHamburger}>
         <img src={exitIcon} alt="" />
       </button>
       <div className={style.navigationBox}>
@@ -22,7 +38,9 @@ const Navigation = () => {
           Community
         </a>
       </div>
-      <button className={style.navBtn}>Connect wallet</button>
+      <button className={style.navBtn} onClick={change}>
+        Connect wallet
+      </button>
     </nav>
   );
 };

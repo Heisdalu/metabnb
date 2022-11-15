@@ -3,10 +3,18 @@ import { UserContext } from "../../store/userProvider";
 import style from "./Overlay.module.css";
 
 const Overlay = () => {
-  const userCtx = useContext(UserContext);
-  console.log(userCtx);
+  const { toggle } = useContext(UserContext);
 
-  return <div className={`${style.overlay} ${style.hidden}`}></div>;
+  const toggleFunc = () => {
+    toggle();
+  };
+
+  return (
+    <div
+      className={`${style.overlay} ${style.hidden}`}
+      onClick={toggleFunc}
+    ></div>
+  );
 };
 
 export default Overlay;

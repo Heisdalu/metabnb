@@ -8,7 +8,6 @@ import Overlay from "./Overlay";
 
 const Connect = () => {
   const { active, toggle } = useContext(UserContext);
-  console.log(active);
 
   const exitFunc = () => {
     toggle();
